@@ -1,0 +1,7 @@
+{
+  "name": "provafinal",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

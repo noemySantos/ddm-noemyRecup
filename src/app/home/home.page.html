@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ola {{user.name}}
+    </ion-title>
+    <ion-button slot="end" href="/lista-pacientes">lista</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <img class="rounded mb-0" src="{{user.img}}">
+
+    <ion-button href='/novo-perfil-modal' color="secondary" expand="block">Editar perfil</ion-button>
+  </ion-card>
+
+</ion-content>

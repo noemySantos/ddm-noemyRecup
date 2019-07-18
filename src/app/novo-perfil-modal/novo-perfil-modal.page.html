@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>NovoPerfilModal</ion-title>
+  </ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button href="/home">Voltar</ion-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-item>
+      <ion-label>Nome: </ion-label>
+      <ion-input [(ngModel)]="user.name"></ion-input>
+    </ion-item>
+
+    <ion-card>
+      <img src="{{user.img}}" alt="">
+      <ion-icon expand="full" (click)="foto()" name="reverse-camera"></ion-icon>
+    </ion-card>
+
+    <ion-button expand="block" (click)="foto()">Enviar</ion-button>
+
+
+  </ion-card>
+
+</ion-content>
