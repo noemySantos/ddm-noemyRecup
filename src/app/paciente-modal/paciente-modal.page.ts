@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import {ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-paciente-modal',
   templateUrl: './paciente-modal.page.html',
   styleUrls: ['./paciente-modal.page.scss'],
 })
-export class PacienteModalPage implements OnInit {
+export class PacienteModalPage {
+  novo_paciente = {
+    "nome": "",
+    "dt_nasc": "",
+    "sexo": "",
+    "idade": "",
+    "id": ""
+  }
+  constructor(public modalController: ModalController) { }
 
-  constructor() { }
 
   ngOnInit() {
+  }
+  add() {
+    this.modalController.dismiss(this.novo_paciente)
   }
 
 }

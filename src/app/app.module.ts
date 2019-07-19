@@ -11,11 +11,17 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx'; 
 import { HttpClientModule } from '@angular/common/http';
+import { PacienteModalPageModule } from './paciente-modal/paciente-modal.module'
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule,IonicModule.forRoot(), IonicStorageModule.forRoot(), AppRoutingModule, HttpClientModule ],
+  imports: [ BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    PacienteModalPageModule,
+    IonicStorageModule.forRoot(),
+    HttpClientModule ],
   providers: [
     StatusBar,
     SplashScreen,

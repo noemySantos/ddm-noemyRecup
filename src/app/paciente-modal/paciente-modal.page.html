@@ -1,9 +1,39 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>PacienteModal</ion-title>
+    <ion-title>Cadastro</ion-title>
   </ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button href="/home">Voltar</ion-button>
+  </ion-buttons>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-content>
 
+      <ion-item>
+        <ion-input placeholder="nome" [(ngModel)]="novo_paciente.nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="dt_nasc" [(ngModel)]="novo_paciente.dt_nasc"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="sexo" [(ngModel)]="novo_paciente.sexo"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="idade" [(ngModel)]="novo_paciente.idade"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="id" [(ngModel)]="novo_paciente.id"></ion-input>
+      </ion-item>
+
+      <ion-button expand="full" (click)="add()">Ok</ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
 </ion-content>
